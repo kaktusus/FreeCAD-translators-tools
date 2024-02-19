@@ -8,5 +8,7 @@ Katalog zawiera narzędzia, które opracowuję do wdrożenia projektu: [[GSoC202
 
 ---
 Powiązane tematy na forum FreeCAD: [export pages to a file](https://forum.freecad.org/viewtopic.php?style=4&t=85327)
+
 Repozytorium GitHub projektu: [FreeCAD-documentation-docusaurus](https://github.com/FreeCAD/FreeCAD-documentation-docusaurus/blob/main/README.md)
+
 Narzędzia zewnętrzne: [Markdown Live Preview](https://markdownlivepreview.com/)
