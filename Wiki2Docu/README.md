@@ -8,5 +8,7 @@ This directory contains tools that I am developing to implement the project: [[G
 
 ---
 Related topics on the FreeCAD forum: [export pages to a file](https://forum.freecad.org/viewtopic.php?style=4&t=85327)
+
 GitHub repository of the project: [FreeCAD-documentation-docusaurus](https://github.com/FreeCAD/FreeCAD-documentation-docusaurus/blob/main/README.md)
+
 External tool: [Markdown Live Preview](https://markdownlivepreview.com/)
