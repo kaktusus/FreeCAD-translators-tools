@@ -25,7 +25,8 @@ if [ ! -f "$wiki_file" ]; then
 fi
 
 # Nazwa pliku wyjściowego
-output_file="${wiki_file%.php}_4.md"
+#output_file="${wiki_file%.php}_4.md"
+output_file="${wiki_file%.wiki}_4.md"
 tmp_file=$(mktemp)
 
 # Przetwarzanie pliku wejściowego
@@ -41,24 +42,9 @@ while IFS= read -r line; do
     line=$(echo "$line" | sed 's/^#[[:space:]]/\* /g')
     line=$(echo "$line" | sed 's/^\(#\*\|\*#\|\*\*\)[[:space:]]\([[:alnum:]]\|{\)/\t\* \2/')
     line=$(echo "$line" | sed 's/^\*#\*[[:space:]]\([[:alnum:]]\)/\t\t\* \1/')
-# ------------------------------ konwersja linków ------------------------------
-# Wyodrębniamy tekst1
-    #tekst1=$(echo "$line" | sed -n "s/.*\[\[\([^|]*\)|.*/\1/p")    oryginał
-#     tekst1=$(echo "$line" | sed -n "s/.*\[\[\(.*\)|.*/\1/p")
-#    echo "t1 $tekst1"
-    # Wyodrębniamy tekst2
-#    tekst2=$(echo "$line" | sed -n 's/.*\[\[.*|\([^]]*\)\]\]/\1/p')
+# ----------------------- konwersja linków wewnętrznych ------------------------
 
-    # Sprawdzamy, czy tekst1 nie zaczyna się od "File:"
-#    if ! [[ $tekst1 =~ ^File: ]]; then
-        # Jeśli nie, dokonujemy zamiany
-        #line=$(echo "$line" | sed "s|[^|]\[\[\([^|]*\)\|\([^]]*\)\]\]|[\2](\1)|g") działa
-        #line=$(echo "$line" | sed "s|\[\[\([^|]*\)\|\([^]]*\)\]\]| [\2](\1)|g") próba dodania spacji z przodu 
-        #line=$(echo "$line" | sed "s|\([^|]\)\[\[\([^|]*\)\|\([^]]*\)\]\]|[\3](\2)|g")
         line=$(echo "$line" | sed "s|\([^|]\)\[\[\([^|]*\)\|\([^]]*\)\]\]|\1[\2](\3)|g")
-
-#    fi
-    
 #    działa jak złoto:       grep -oP '\[\[[^|\]]*\|([^]]*)\]\]' Body.php
     
 # ------------------------------ konwersja nagłówków ---------------------------

@@ -8,6 +8,8 @@
 
 #nazwa rozszerzenia dla pobranych plików:
 ext="wiki"
+# Licznik powtórzeń
+count=0
 
 # Sprawdź, czy podano przynajmniej jeden argument.
 if [ $# -lt 1 ]; then
@@ -40,24 +42,37 @@ if [ "$1" == "lista" ]; then
     # Przejdź przez każdy tytuł z pliku.
     while IFS= read -r title || [[ -n "$title" ]]; do
         # Jeśli linia jest pusta, zakończ pobieranie i przerwij pętlę.
-        if [[ -z "$title" ]]; then
-            echo -e "Pobieranie zakończone: Znaleziono pustą linię.\n"
+    if [[ -z "$title" ]]; then
+        echo -e "\e[1;33mZnaleziono pustą linię.\n\e[0m"
+        # Pytanie użytkownika o przerwanie przetwarzania.
+        read -rn1 -p $'Czy chcesz przerwać pracę? \e[1;33m(t/n):\e[0m ' answer < /dev/tty
+        if [[ "$answer" == "t" ]]; then
+            echo -e "\nPrzerwano przetwarzanie na żądanie użytkownika.\n"
             break
+            #exit 0
         fi
+    fi
+    # po wykryciu pustej linii tytuł jest pusty i pobiera stronę główną jako ".wiki" nie chcę tego
+    if [[ -n "$title" ]]; then
         # Utwórz URL na podstawie tytułu.
         url="https://wiki.freecad.org/index.php?title=$title&action=raw"
 
         # Pobierz zawartość z URL i zapisz do pliku.
         echo -e "\e[1;90m "
         curl "$url" > "${directory}/${title}.$ext"
+#        curl -# "$url" > "${directory}/${title}.$ext"
         status=$?
 
         if [ $status -eq 0 ]; then
-            echo -e "/n\e[0mPobieranie tytułu \e[32m$title \e[mzakończone sukcesem. Treść zapisano do: \e[32m${directory}/${title}.$ext\n\e[m"
+            ((count++))
+            echo -e "\n\e[0mPobieranie tytułu \e[32m$title \e[mzakończone sukcesem. Treść zapisano do: \e[32m${directory}/${title}.$ext\n\e[m"
+            echo -e "Liczba pobranych stron: \e[1;34m$count\n\e[0m"
         else
-            echo -e "/n\e[0mBłąd podczas pobierania tytułu \e[32m$title\n\e[m. Kod wyjścia: \e[32m$status\n\e[m"
+            echo -e "\n\e[0mBłąd podczas pobierania tytułu \e[32m$title\n\e[m. Kod wyjścia: \e[32m$status\n\e[m"
         fi
+    fi
     done < "$titles_file"
+    echo "do katalogu $directory zapisano $count plików." > "$directory/raport_${directory}.txt"
 else
     # Jeśli pierwszy argument to nie "lista", zakładamy, że jest to pojedynczy tytuł.
     title="$1"
@@ -72,6 +87,7 @@ else
 
     if [ $status -eq 0 ]; then
         echo -e "\n\e[0mPobieranie tytułu \e[32m$title\e[m zakończone sukcesem. Zapisano do: \e[32m${title}.$ext\n\e[m"
+        
     else
         echo -e "\nBłąd podczas pobierania tytułu \e[32m$title\e[m. Kod wyjścia: \e[32m$status\n\e[m"
     fi
