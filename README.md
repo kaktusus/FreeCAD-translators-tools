@@ -37,7 +37,7 @@ It is straightforward. Copy the script file to the directory where you have down
 #### Download sctipt here.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
 
-##Update 2025-11-16
+### Update 2025-11-16
 
 This is yet another change to the location of local translation files.
 Starting from the latest release, the new target directory is:
