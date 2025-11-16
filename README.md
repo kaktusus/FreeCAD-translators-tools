@@ -35,11 +35,9 @@ It is straightforward. Copy the script file to the directory where you have down
 
 <video src="https://raw.githubusercontent.com/kaktusus/FreeCAD-translators-tools/refs/heads/main/images/QMConvwet2_2024-02-15_14-53.mp4"></video>
 
-
 https://github.com/user-attachments/assets/d745c570-dff1-4716-a44a-75813115440d
 
-
-![operation of script](/images/QMConvwet2_2024-02-15_14-53.mp4)
+[comment]: ( ![operation of script](/images/QMConvwet2_2024-02-15_14-53.mp4) )
 
 #### Download sctipt here.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
