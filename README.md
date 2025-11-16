@@ -33,9 +33,9 @@ If you are working with an external workbench from outside the ***FreeCAD-addons
 ### Working with a script.
 It is straightforward. Copy the script file to the directory where you have downloaded the source files. Give it the required `+x` permissions, then call it from the console.
 
-<video src="https://raw.githubusercontent.com/kaktusus/FreeCAD-translators-tools/refs/heads/main/images/QMConvwet2_2024-02-15_14-53.webm"></video>
+<video src="https://raw.githubusercontent.com/kaktusus/FreeCAD-translators-tools/refs/heads/main/images/QMConvwet2_2024-02-15_14-53.mp4"></video>
 
-![operation of script](/images/QMConvwet2_2024-02-15_14-53.webm)
+![operation of script](/images/QMConvwet2_2024-02-15_14-53.mp4)
 
 #### Download sctipt here.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
