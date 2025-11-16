@@ -27,7 +27,11 @@ Zawiera on narzędzia QT, wtym niezbędny lrelease.
 ### Przygotowanie plików źródłowych z tłumaczeniami.
 Pliki `.ts` do części GUI, która Cię interesuje możesz pobrać z platformy Crowdin Projektu [FreeCAD](https://crowdin.com/project/freecad/pl) lub [FreeCAD-addons](https://crowdin.com/project/freecad-addons). Gdy nie posiadasz konta musisz posiadać znajomego, który takowe ma.
 
+https://github.com/user-attachments/assets/02a7d25c-3e9a-4212-af61-ba26c7494eea
+
+<!--
 ![jak pobrać plik źródłowy](/images/download_2024-02-15_13-56.webm)
+-->
 Jeśli pracujesz z zewnętrznym środowiskiem pracy z poza repozytorium ***FreeCAD-addons***, pliki źródłowe tłumaczeń musisz wygenerować samodzielnie, lokalnie.
 
 ### Praca ze skryptem.
