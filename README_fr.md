@@ -37,3 +37,18 @@ C'est simple. Copiez le fichier script dans le répertoire où vous avez téléc
 
 #### Téléchargez le script ici.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
+
+### Mise à jour du 2025-11-16
+
+Il s’agit d’un nouveau changement concernant l’emplacement des fichiers de traduction locaux.
+À partir de la dernière version, le nouveau répertoire cible est :
+`~/.local/share/FreeCAD/v1-1/translations`
+Par conséquent, le script doit être mis à jour.
+
+Il est possible de vérifier le répertoire de configuration actuel directement dans le programme via la console Python :
+
+```
+App.getUserAppDataDir()
+
+```
+Il faut créer un dossier `translations` à cet emplacement pour y placer les fichiers de traduction locaux.
