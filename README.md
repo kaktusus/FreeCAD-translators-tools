@@ -38,7 +38,7 @@ It is straightforward. Copy the script file to the directory where you have down
 ![operation of script](/images/QMConvwet2_2024-02-15_14-53.webm)
 
 #### Download sctipt here.
-[QMConvert2](https://github.com/kaktusus/FreeCAD-translators-tools/raw/refs/heads/main/bash_scripts/QMconvert2.sh)
+[QMConvert2](/bash_scripts/QMconvert2.sh)
 
 ### Update 2025-11-16
 
