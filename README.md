@@ -33,9 +33,7 @@ If you are working with an external workbench from outside the ***FreeCAD-addons
 ### Working with a script.
 It is straightforward. Copy the script file to the directory where you have downloaded the source files. Give it the required `+x` permissions, then call it from the console.
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/kaktusus/FreeCAD-translators-tools/raw/refs/heads/main/images/QMConvwet2_2024-02-15_14-53.webm" type="video/webm">
-</video>
+https://github.com/kaktusus/FreeCAD-translators-tools/raw/refs/heads/main/images/QMConvwet2_2024-02-15_14-53.webm
 
 ![operation of script](/images/QMConvwet2_2024-02-15_14-53.webm)
 
