@@ -37,3 +37,14 @@ Nie jest niczym wyrachowanym. Do katalogu, w którym masz pobrane pliki źródł
 
 #### Pobierz sktypt tutaj.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
+
+
+## Aktualizacja 2025-11-16
+To juz kolejny raz zmieniono lokalizcję plików z tłumaczeniami lokalnymi.
+Tym razem od wydania nowej wersji miejscem docelowym jest: `~/.local/share/FreeCAD/v1-1/translations`
+Więc skrypt wymaga aktualizacji.
+
+Istnieje możliwość aby w programie sprawdzić gdzie znajduje się bierzący katalog konfiguracji dzięki konsoli Python:
+```App.getUserAppDataDir()```
+
+I właśnie tam należy utorzyć katalog `translations` na lokalne pliki tłumaczeń.
