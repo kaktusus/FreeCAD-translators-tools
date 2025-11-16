@@ -37,7 +37,7 @@ Toimintatapa on suoraviivainen. Kopioi skriptitiedosto hakemistoon, jonne olet l
 [QMConvert2](/bash_scripts/QMconvert2.sh)
 
 
-##Päivitys 16.11.2025
+### Päivitys 2025-11-16
 
 Tämä on jälleen uusi muutos paikallisten käännöstiedostojen sijaintiin.
 Uusimmasta julkaisusta alkaen uusi kohdehakemisto on:
