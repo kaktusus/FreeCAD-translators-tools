@@ -37,7 +37,11 @@ Jeśli pracujesz z zewnętrznym środowiskiem pracy z poza repozytorium ***FreeC
 ### Praca ze skryptem.
 Nie jest niczym wyrachowanym. Do katalogu, w którym masz pobrane pliki źródłowe skopiuj plik skryptu. Nadaj mu wymagane uprawnienia `+x`, po czym wywołaj go w konsoli.
 
+https://github.com/user-attachments/assets/d745c570-dff1-4716-a44a-75813115440d
+
+<!--
 ![działanie skryptu](/QMConvwet2_2024-02-15_14-53.webm)
+-->
 
 #### Pobierz sktypt tutaj.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
