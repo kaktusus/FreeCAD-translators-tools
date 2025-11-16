@@ -39,7 +39,7 @@ Nie jest niczym wyrachowanym. Do katalogu, w którym masz pobrane pliki źródł
 [QMConvert2](/bash_scripts/QMconvert2.sh)
 
 
-## Aktualizacja 2025-11-16
+### Aktualizacja 2025-11-16
 To juz kolejny raz zmieniono lokalizcję plików z tłumaczeniami lokalnymi.
 Tym razem od wydania nowej wersji miejscem docelowym jest: `~/.local/share/FreeCAD/v1-1/translations`
 Więc skrypt wymaga aktualizacji.
