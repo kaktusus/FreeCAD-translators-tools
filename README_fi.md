@@ -35,3 +35,19 @@ Toimintatapa on suoraviivainen. Kopioi skriptitiedosto hakemistoon, jonne olet l
 ![Skriptin toiminta](/images/QMConvwet2_2024-02-15_14-53.webm)
 #### Lataa skripti täältä.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
+
+
+##Päivitys 16.11.2025
+
+Tämä on jälleen uusi muutos paikallisten käännöstiedostojen sijaintiin.
+Uusimmasta julkaisusta alkaen uusi kohdehakemisto on:
+`~/.local/share/FreeCAD/v1-1/translations`
+Siksi skripti täytyy päivittää.
+
+Ohjelmassa on mahdollista tarkistaa nykyinen määrityshakemisto Python-konsolin kautta:
+
+```
+App.getUserAppDataDir()
+```
+
+Kyseiseen hakemistoon tulee luoda `translations`-kansio paikallisille käännöstiedostoille.
