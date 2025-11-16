@@ -27,7 +27,7 @@ This package includes QT tools, including the necessary lrelease.
 ### Prepare source files with translations.
 You can download `.ts` files for the GUI part you are interested in from the Crowdin project platform [FreeCAD](https://crowdin.com/project/freecad/pl) or [FreeCAD-addons](https://crowdin.com/project/freecad-addons). If you do not have an account, you must have a friend who does.
 
-![how to download the source file](/images/download_2024-02-15_13-56.webm)
+![how to download the source file](/images/download_2024-02-15_13-56.mp4)
 If you are working with an external workbench from outside the ***FreeCAD-addons*** repository, you must generate the translation source files yourself, locally.
 
 ### Working with a script.
