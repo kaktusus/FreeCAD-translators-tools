@@ -29,9 +29,9 @@ You can download `.ts` files for the GUI part you are interested in from the Cro
 
 https://github.com/user-attachments/assets/02a7d25c-3e9a-4212-af61-ba26c7494eea
 
-{::comment}
+<!--
 ![how to download the source file](/images/download_2024-02-15_13-56.mp4)
-{:/comment}
+-->
 
 If you are working with an external workbench from outside the ***FreeCAD-addons*** repository, you must generate the translation source files yourself, locally.
 
@@ -42,9 +42,9 @@ It is straightforward. Copy the script file to the directory where you have down
 
 https://github.com/user-attachments/assets/d745c570-dff1-4716-a44a-75813115440d
 
-{::comment}
+<!--
  ![operation of script](/images/QMConvwet2_2024-02-15_14-53.mp4) 
-{:/comment}
+-->
 
 #### Download sctipt here.
 [QMConvert2](/bash_scripts/QMconvert2.sh)
