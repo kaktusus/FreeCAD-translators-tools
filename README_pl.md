@@ -45,6 +45,8 @@ Tym razem od wydania nowej wersji miejscem docelowym jest: `~/.local/share/FreeC
 Więc skrypt wymaga aktualizacji.
 
 Istnieje możliwość aby w programie sprawdzić gdzie znajduje się bierzący katalog konfiguracji dzięki konsoli Python:
-```App.getUserAppDataDir()```
+```
+App.getUserAppDataDir()
+```
 
 I właśnie tam należy utorzyć katalog `translations` na lokalne pliki tłumaczeń.
